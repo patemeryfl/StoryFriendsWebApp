@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Python Flask Bucket List App</title>
+
+
+    <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="http://getbootstrap.com/examples/jumbotron-narrow/jumbotron-narrow.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+  <div class="container">
+</div>
+
+
+
+
+    <div class="container">
+        <div class="header">
+            <nav>
+                <ul class="nav nav-pills pull-right">
+                    <li role="presentation" class="active"><a href="#">Home</a>
+                    </li>
+                    <li role="presentation"><a href="#">Sign In</a>
+                    </li>
+                    <li role="presentation"><a href="showSignUp">Sign Up</a>
+                    </li>
+                </ul>
+            </nav>
+            <h3 class="text-muted">StoryFriends Story Uploader</h3>
+        </div>
+
+        <div class="jumbotron">
+            <div class="Uploader">
+                <form action="/display" method="post" id="employForm">
+                  <fieldset>
+                    <label>
+                    Which Book?
+                      <select name="Book" required>
+                        <option value="storyFriends">Story Friends</option>
+                        <option value="oceanFriends">Ocean Friends</option>
+                        <option value="jungleFriends">Jungle Friends</option>
+                      </select>
+                    </label>
+                    <label>Story Name:
+                      <input type="text" name="Name" placeholder="Ellie's First Day" required>
+                    </label>
+                    <label>Question:
+                      <input type="text" name="Question" id="Question" required>
+                    </label>
+                    <label>Answers:
+                      <input type="text" name="Answer1" id="Answer1" required>
+                      <input type="text" name="Answer2" id="Answer2">
+                    </label>
+                   </fieldset>
+                  <button class="button-primary" type="submit" value="Submit" form="employForm">SUBMIT!</button>
+                </form>
+              </div>
+            </div>
+
+        <footer class="footer">
+            <p>&copy; StoryFriends 2017</p>
+        </footer>
+    </div>
+</body>
+
+</html>
